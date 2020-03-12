@@ -1,0 +1,25 @@
+/* pages/home/index.wxss */
+swiper ,swiper image{
+  width: 100vw;
+  height: 400rpx;
+}
+
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.menu .menu-item{
+  width: 25vw;
+  height: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.menu image{
+  width: 50%;
+  height: 50%;
+}

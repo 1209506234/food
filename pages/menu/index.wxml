@@ -1,0 +1,60 @@
+<swiper autoplay="ture" indicator-dots="true" interval="3000" circular="true" indicator-active-color="white">
+  <swiper-item>
+    <image src="http://p1.music.126.net/hDANKu28CWxr9nxMbi3vEQ==/109951164741160612.jpg?imageView&quality=89"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="http://p1.music.126.net/rZyWMgLVUQrhm4IXQIZ2PA==/109951164740456353.jpg?imageView&quality=89"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="http://p1.music.126.net/XTdmhafyZVG5iUdnCRC5aw==/109951164740560780.jpg?imageView&quality=89"></image>
+  </swiper-item>
+</swiper>
+
+<view class="container flex">
+  <scroll-view scroll-y="true" class="left">
+    <view data-idx="{{index}}" bindtap="choosen" class="leftItem {{activeIndex==index?'active':''}}" wx:for="{{menuType}}">
+      <image style="width:50px;height:50px;" src="{{item.img}}"></image>
+      <view>{{item.name}}</view>
+    </view>
+  </scroll-view>
+  <scroll-view scroll-y="true" class="right" scroll-with-animation="true" scroll-into-view="{{selecteId}}">
+    <view id='{{"item"+index}}' class="rightItem flex" wx:for="{{food}}">
+      <image style="width:170px;height:128px;" src="{{item.img}}"></image>
+      <view class="info flex">
+        <view>{{item.title}}</view>
+        <view style="color:red;">￥{{item.price}}</view>
+        <view class="cart">
+          <view style="font-size:24px;" data-idx="{{index}}" bindtap="minus" class="iconfont icon-minus1 {{item.count>0?'':'invisable'}}"></view>
+          <view style="padding : 0 10px 0 10px;" class="{{item.count>0?'':'invisable'}}">{{item.count}}</view>
+          <view style="font-size:24px;" data-idx="{{index}}" bindtap="plus" class="iconfont icon-plus1"></view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+
+<view class="balance">
+  <view class="bottom">
+    <view bindtap="balance" class="cart iconfont icon-cart1"></view>
+    <view>总价:￥{{totalSum}}</view>
+    <view>
+      <button bindtap="pay">结算</button>
+    </view>
+  </view>
+  <view class="back" wx:if="{{showBack}}">
+    <view class="banner">
+      <view>已选商品</view>
+      <view>清空</view>
+    </view>
+    <view class="cartFoodList">
+      <view class="cartFoodItem" wx:for="{{cartFoodList}}">
+        <view style="padding: 10rpx;" class="title">{{item.title}} ￥{{item.price}}</view>
+        <view style="padding: 10rpx;"  class="cart">
+          <view data-idx="{{index}}" bindtap="cartMinus" class="iconfont icon-minus"></view>
+          <view style="padding: 20rpx;">{{item.count}}</view>
+          <view data-idx="{{index}}" bindtap="cartPlus" class="iconfont icon-plus"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

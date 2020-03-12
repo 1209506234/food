@@ -1,0 +1,4 @@
+<view class="fee">
+  <view class="title">{{title}}</view>
+  <view class="sum">￥{{sum}}</view>
+</view>

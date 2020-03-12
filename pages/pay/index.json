@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "fee":"/components/fee/index"
+  }
+}

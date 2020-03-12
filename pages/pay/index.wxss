@@ -1,0 +1,75 @@
+@import "/assets/fonts/iconfont.wxss";
+
+.contact{
+  padding: 20rpx;
+  background: #eee;
+  border-radius: 10rpx;
+}
+
+.contact .address{
+  font-size: 16px;
+}
+
+.contact .name{
+  font-size: 16px;
+}
+
+.cartItem{
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx;
+  border-bottom: 1px dashed #eee
+}
+
+.left{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+.left .check{
+  color: skyblue;
+  font-size: 28px;
+  padding: 10px;
+}
+
+.left image{
+  width: 90rpx;
+  height: 60rpx;
+  padding: 10rpx;
+}
+
+.right{
+  padding: 10rpx;
+  text-align: center;
+  align-items: center;
+}
+.right view{
+  align-items: center;
+}
+
+.bottom{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  height: 100rpx;
+  width: 100vw;
+  background: #eee;
+}
+
+.bottom .checkAll{
+  color: skyblue;
+  font-size: 28px;
+  padding: 10px;
+}
+
+.bottom .pay{
+  background: skyblue;
+  padding: 0 50px;
+  color: white;
+  line-height: 100rpx;
+}

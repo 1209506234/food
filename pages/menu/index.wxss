@@ -1,0 +1,94 @@
+@import "../../assets/fonts/iconfont.wxss";
+
+/* pages/home/index.wxss */
+swiper ,swiper image{
+  width: 100vw;
+  height: 400rpx;
+}
+
+.container{
+  padding: 3px;
+  height: calc(100vh - 500rpx);
+}
+
+.container .left{
+  width: 200rpx;
+  text-align: center;
+  background: #EEE;
+}
+
+.container .left .active{
+  background: white;
+}
+
+.container .left .leftItem{
+  border-bottom: solid 1px white
+}
+
+.container .right{
+  flex: 1;
+}
+
+.container .right .rightItem {
+  border-bottom: solid 1px #EEE;
+}
+.container .right .rightItem .info{
+  flex: 1;
+  text-align: right;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.container .right .rightItem .info .cart{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 24px;
+}
+
+.container .right .rightItem .info .cart .invisable{
+  display: none;
+}
+
+.balance{
+  width: 100vw;
+  height: 100rpx;
+}
+
+.balance .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.balance .bottom .cart{
+  padding-left: 10rpx;
+  font-size: 32px;
+}
+
+.balance .back{
+  width: 100vw;
+  height: calc(100vh - 480rpx);
+  position: absolute;
+  left: 0;
+  top: 400rpx;
+  background: #EEE;
+}
+
+.balance .back .banner{
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx;
+}
+
+.balance .back .cartFoodList .cartFoodItem{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+
+.balance .back .cartFoodList .cartFoodItem .cart{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

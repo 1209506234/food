@@ -1,0 +1,86 @@
+{
+  "id": "1446676",
+  "name": "lc1",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "632972",
+      "name": "未选中",
+      "font_class": "2weixuanzhong",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "5466019",
+      "name": "checked",
+      "font_class": "checked",
+      "unicode": "e70f",
+      "unicode_decimal": 59151
+    },
+    {
+      "icon_id": "12865651",
+      "name": "cart",
+      "font_class": "cart1",
+      "unicode": "e6e6",
+      "unicode_decimal": 59110
+    },
+    {
+      "icon_id": "924453",
+      "name": "minus",
+      "font_class": "minus1",
+      "unicode": "e90a",
+      "unicode_decimal": 59658
+    },
+    {
+      "icon_id": "7605157",
+      "name": "plus",
+      "font_class": "plus1",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "2206416",
+      "name": "icon-cart",
+      "font_class": "cart",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "1196945",
+      "name": "minus",
+      "font_class": "minus",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "1196994",
+      "name": "plus",
+      "font_class": "plus",
+      "unicode": "e65b",
+      "unicode_decimal": 58971
+    },
+    {
+      "icon_id": "5504475",
+      "name": "ticket",
+      "font_class": "ticket",
+      "unicode": "e68c",
+      "unicode_decimal": 59020
+    },
+    {
+      "icon_id": "7604995",
+      "name": "coffee",
+      "font_class": "coffee",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "8474258",
+      "name": "gift",
+      "font_class": "gift",
+      "unicode": "e6b7",
+      "unicode_decimal": 59063
+    }
+  ]
+}

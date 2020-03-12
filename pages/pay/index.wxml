@@ -1,0 +1,31 @@
+<view class="contact">
+  <view class="address">{{address}}</view>
+  <view class="name">{{userInfo.nickName}}{{userInfo.gender==1?"先生":"女士"}} </view>
+</view>
+
+<view class="container">
+  <view class="cartItem" wx:for="{{cartFoodList}}">
+    <view class="left">
+      <view data-idx="{{index}}" bindtap="choose" class="check iconfont {{item.checked?'icon-checked':'icon-2weixuanzhong'}} "></view>
+      <image src="{{item.img}}"></image>
+      <view>{{item.title}}</view>
+      <view>{{item.count}}份</view>
+    </view>
+    <view class="right">
+      <view>{{item.count * item.price}}</view>
+    </view>
+  </view>
+</view>
+
+<view>
+  <fee title="包装费" sum="3"></fee>
+  <fee title="配送费" sum="5"></fee>
+  <fee title="红包" sum="5"></fee>
+  <fee title="代金券" sum="2"></fee>
+</view>
+
+<view class="bottom">
+  <view bindtap="chooseAll" class="checkAll iconfont {{isCheckAll?'icon-checked':'icon-2weixuanzhong'}}"></view>
+  <view>总计:￥{{totalSum}}</view>
+  <view class="pay">支付</view>
+</view>

@@ -1,0 +1,13 @@
+
+.fee{
+  display: flex;
+  justify-content: space-between
+}
+
+.fee .title{
+  padding: 10rpx;
+}
+
+.fee .sum{
+  padding: 10rpx;
+}
