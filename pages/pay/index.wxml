@@ -27,5 +27,5 @@
 <view class="bottom">
   <view bindtap="chooseAll" class="checkAll iconfont {{isCheckAll?'icon-checked':'icon-2weixuanzhong'}}"></view>
   <view>总计:￥{{totalSum}}</view>
-  <view class="pay">支付</view>
+  <view class="pay">支付111</view>
 </view>
